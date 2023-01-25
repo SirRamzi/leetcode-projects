@@ -1,5 +1,6 @@
 public class App {
     public static void main(String[] args) throws Exception {
-        System.out.println(NumberOfSteps1372.numberOfSteps(14));;
+        int[][] mat = {{1,1,0,0,0},{1,1,1,1,0},{1,0,0,0,0},{1,1,0,0,0},{1,1,1,1,1}};
+        WeakestRows1337.kWeakestRows(mat, 3);
     }
 }
