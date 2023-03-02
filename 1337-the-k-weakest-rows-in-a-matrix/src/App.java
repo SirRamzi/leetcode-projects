@@ -1,7 +1,15 @@
 import java.util.Arrays;
 import java.util.Comparator;
 
-public class WeakestRows1337 {
+public class App {
+    public static void main(String[] args) throws Exception {
+        int[][] mat = {{1,0,0,0},{1,1,1,1},{1,0,0,0},{1,0,0,0}};
+        int k = 2;
+        System.out.println(Solution.kWeakestRows(mat, k));
+    }
+}
+
+class Solution {
     public static int[] kWeakestRows(int[][] mat, int k) {
         int[] weakestRows = new int[k];
         int[][] solidersNumber = new int[mat.length][2];
